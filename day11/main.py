@@ -1,5 +1,5 @@
 def get_todos():
-    with open("../day12/todos.txt", "r") as file:
+    with open("../day13/todos.txt", "r") as file:
         return(file.readlines())
 
 while True:
@@ -10,7 +10,7 @@ while True:
          todos = get_todos()
          todos.append(todo)
 
-         with open("../day12/todos.txt", "w") as file:
+         with open("../day13/todos.txt", "w") as file:
              file.writelines(todos)
 
     elif 'show' in user_action:
@@ -38,7 +38,7 @@ while True:
          index = number - 1
          todo_to_remove = todos[index].strip('\n')
          todos.pop(index)
-         with open('../day12/todos.txt', 'w') as file:
+         with open('../day13/todos.txt', 'w') as file:
              file.writelines(todos)
          message = f"Todo {todo_to_remove} was removed from the list"
     elif 'exit' in user_action:
