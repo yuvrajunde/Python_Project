@@ -16,12 +16,6 @@ print(f"{parsed['feet']} feet and {parsed['inches']} inches is equal to {result}
 
 
 if result < 1:
-    print("Kid is small")
+    print("Kid is small.")
 else:
-    print("Kid can use the slide")
-
-user = int(input("enter liter"))
-def meter(value):
-    m = value / 1000
-    return m
-print(meter(user))
+    print("Kid can use the slide.")
